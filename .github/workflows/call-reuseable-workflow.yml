@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: job1   # job1이 끝난 후에 수행
     steps:
-      - run: echo ${{ needs.job1.outputs.output1 }}>> $GITHUB_OUTPUT
+      - run: echo ${{ needs.job1.outputs.output1 }}
   # needs 를 통해 output 접근
